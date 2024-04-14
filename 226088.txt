@@ -1,0 +1,73 @@
+git clone https://github.com/Kostadin-Pejoski/SI_2024_lab1_226088.git
+so ovaa komanda kreirame i lokalen repozitorium i istovremeno go povrzuvame so remote repozitioriumot
+go dodavame fajlot README.md
+git add README.md
+so ovaa komanda README.md preminuva od untracked vo staged
+git commit -m "Initial commit"
+pravime commit so poraka  Initial commit
+gi dodaveme java fajlovite za rabota
+git add .
+so ovaa komanda site preminuvaat od untracked vo staged
+git commit -m "Add starter code"
+git branch bug1
+git branch bug2
+so ovie dve komandi pravime dve novi granki t.e bug1 i bug2
+git checkout bug1
+se prefralme na bug1
+ja popravame greskata vo metodot filterOddLenghtStrings
+git add .
+git commit -m "Fix wrong condition in filterOddLengthStrings"
+pravime commit so poraka Fix wrong condition in filterOddLengthStrings
+git checkout bug2
+se preflame na grankata bug2
+ja poravame greskata vo metodot makeBigStringFrom
+git add .
+git commit -m "Fix wrong condition in makeBigStringFrom"
+pravime commit so poraka Fix wrong condition in makeBigStringFrom
+git checkout bug1
+se vrajkame na bug1
+go menuvame fajlot SILab1Main.java
+git add .
+git commit -m "Call method filter OddLengthStrings in main class"
+pravime commit so poraka Call method filter OddLengthStrings in main class
+git checkout bug2
+se prefrlame na grankata bug2
+go menuvame fajlot SILab1Main.java (razlicno vo sporedba so bug1)
+git add .
+git commit -m "Call method makeBigStringFrom in main class"
+pravime commit so poraka Call method makeBigStringFrom in main class
+git push origin bug2
+git checkout bug1
+git push origin bug1
+git checkout master
+git push origin master
+so ovie nekolku komandi nie gi sinhronizirame nasite lokalni granki so remote grankite na github
+git merge bug1
+so ovaa komanda ja spojuvame grankata bug1 kon master
+git push origin master
+ja sinhronizirame lokalnata master so remote master
+git checkout bug2
+se prefrlame na bug2
+git rebase master
+pravime rebase sprema grankata master
+se pojavuva konflikt bidejki vo ist fajl 16tata linija kod e razlicna System.out.println(SILab1_1.filterOddLengthStrings(list)); ne e isto soSystem.out.println(SILab1_2.makeBigStringFrom(list));
+go resava konflikotot taka sto System.out.println(SILab1_1.filterOddLengthStrings(list)); e prvo a posle nego se izvrsuva System.out.println(SILab1_2.makeBigStringFrom(list));
+git rebase --continue
+dozvoluvame da se prodolzi rebaseot bidejki sme go resile konfliktot i se sozdava nov merge commit
+git checkout master
+se vrajakame na master
+git merge bug2
+ja spojuvame grankata bug2 kon master
+git push origin master
+ja sinhrinizirame grankata master so remote master
+git checkout bug2
+se prefrlame na bug2
+git push --force origin bug2
+ja sinhronizirame grankata bug2 so remote bug2
+git checkout master
+se vrajkame na master
+gi dodavame fajlovite 226088.txt i log.txt
+git add .
+git commit -m "Final commit"
+git push origin master
+pravime posleden commit i toj go sinhronzirame so remote master

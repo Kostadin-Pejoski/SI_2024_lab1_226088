@@ -1,0 +1,21 @@
+commit a12f56773346cec8611b12becda7122f91ca62c8 (HEAD -> master, origin/master, origin/bug2, bug2)
+Author: Kostadin-Pejoski <kostadin.pejoski1@gmail.com>
+Date:   Sun Apr 14 21:25:45 2024 +0200
+
+    Call method makeBigStringFrom in main class
+
+commit aa3af4267f4755874d2c4686788789ed6dfe7b30
+Author: Kostadin-Pejoski <kostadin.pejoski1@gmail.com>
+Date:   Sun Apr 14 21:16:15 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 70d15eae5ad3655bb7bb292006bc1fdcd7366ce5 (origin/bug1, bug1)
+Author: Kostadin-Pejoski <kostadin.pejoski1@gmail.com>
+Date:   Sun Apr 14 21:22:15 2024 +0200
+
+    Call method filterOddLengthStrings
+
+commit 8eddf70d7b01bf4893a19d65c353836ff88a575b
+Author: Kostadin-Pejoski <kostadin.pejoski1@gmail.com>
+Date:   Sun Apr 14 21:11:36 2024 +0200
